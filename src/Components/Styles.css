@@ -1,0 +1,115 @@
+form {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  transition: .4s;
+  box-shadow: 0 0 5px black;
+}
+
+form input:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+}
+
+form button {
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  border: none;
+  font-size: 25px;
+  background-color: #FD0072;
+  transition: .2s;
+  box-shadow: 0 0 10px black;
+  color: #fff;
+}
+
+form button:hover {
+  background-color: #922858;
+  cursor: pointer;
+}
+
+form button:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
+
+.todoList {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.form__todoList {
+  display: flex;
+  width: 29% !important;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background: rgba(252, 0, 223, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.form__todoList input {
+  border-radius: 5px !important;
+  width: 50%;
+  padding: 5px 5px;
+  font-size: 18px;
+  background: transparent !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form__todoList span,
+.form__todoList s,
+.form__todoList input {
+  flex: 1;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.form__todoList div span svg {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form__todoList div span svg:hover {
+  transform: scale(0.8);
+}
+
+@media (max-width: 700px) {
+  form {
+    width: 95%;
+  }
+  .todoList {
+    width: 95%;
+  }
+  .form__todoList {
+    width: 100%;
+  }
+}
+
+.getBack svg {
+  font-size: 50px;
+}
